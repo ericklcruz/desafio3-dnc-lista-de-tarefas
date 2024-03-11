@@ -1,0 +1,106 @@
+@use '../../global.scss' as *;
+
+table {
+    // column-rule-style: none;
+    border: 0;
+    font-family: 'Raleway';
+    text-align: center;
+    border-spacing: 0
+}
+
+th {
+    margin: 0;
+    padding: 1rem;
+
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+
+    border-bottom: 3px solid #4d4d4d;
+    border-collapse: separate;
+    border-spacing: 5px 5px;
+}
+
+
+tr {
+    line-height: 3rem;
+
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#taskCol {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+img {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input {
+    background: transparent;
+    border: 0;
+    color: $white;
+
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 1.5rem;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+input:placeholder-shown {
+    font-style: italic;
+    color: $white;
+    border: 0;
+}
+
+.editable,
+.editable:focus {
+    outline-style: auto;
+    color: $editColor;
+    font-style: italic;
+    background: transparent;
+}
+
+
+input[type="checkbox"] {
+    scale: 1.6;
+    cursor: pointer;
+}
+
+.editButton {
+    //box
+    width: 80px;
+    height: 30px;
+    top: 611px;
+    left: 434px;
+    border-radius: 5px;
+    border: 0;
+
+    background-color: $primaryColor;
+    color: $white;
+    cursor: pointer;
+
+    // hover off
+    transition: 0.3s;
+
+    //font
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.editButton:hover {
+    background-color: #065ccc;
+    transition: 0.3s;
+}

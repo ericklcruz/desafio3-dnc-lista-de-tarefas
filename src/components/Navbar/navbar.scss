@@ -1,0 +1,37 @@
+@use '../../global.scss' as *;
+
+.navbar {
+    // BACKGROUND
+    background-color: $primaryColor;
+    padding-top: 1rem;
+
+    // DISPLAY
+    display: flex;
+    align-items: flex-end;
+
+    // FONT
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    ul li {
+        margin: 0;
+        padding: 0.5rem 2rem;
+    }
+
+    ul :nth-of-type(2) {
+        background: $white;
+        color: $primaryColor;
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+    }
+}
